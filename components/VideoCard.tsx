@@ -64,7 +64,7 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
         >
-          <Link href="/">
+          <Link href={`/detail/${post._id}`}>
             <video
               loop
               muted={isMuted}
